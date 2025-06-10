@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问卷调查 - 中西建筑文化遗产故事摄影展</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 120px;
+        }
+        .radio-group {
+            margin-bottom: 10px;
+        }
+        .radio-group label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #45a049;
+        }
+        .back-btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <h1>Visitor Suggestions and Comments</h1>
+    <h2>Online Exhibition Visitor Feedback Collection Form</h2>
+
+    <form>
+        <h3>I.Basic Information</h3>
+        <div class="form-group">
+            <label>1. Visitor Name (Optional):</label>
+            <input type="text" name="visitor-name">
+        </div>
+        <div class="form-group">
+            <label>2. Email Address (for Follow-up, Optional):</label>
+            <input type="email" name="email">
+        </div>
+
+        <h3>II.Exhibition Access and Experience</h3>
+        <div class="form-group">
+            <label>1. Accessibility:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="accessibility" value="very-convenient"> Very Convenient</label><br>
+                <label><input type="radio" name="accessibility" value="relatively-convenient"> Relatively Convenient</label><br>
+                <label><input type="radio" name="accessibility" value="average"> Average</label><br>
+                <label><input type="radio" name="accessibility" value="less-convenient"> Less Convenient</label><br>
+                <label><input type="radio" name="accessibility" value="very-inconvenient"> Very Inconvenient</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="accessibility-suggestions" rows="3"></textarea>
+        </div>
+
+        <!-- Repeat the above structure for each section -->
+        
+        <div class="form-group">
+            <label>2. Interactivity:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="interactivity" value="very-interactive"> Very Interactive</label><br>
+                <label><input type="radio" name="interactivity" value="relatively-interactive"> Relatively Interactive</label><br>
+                <label><input type="radio" name="interactivity" value="average"> Average</label><br>
+                <label><input type="radio" name="interactivity" value="less-interactive"> Less Interactive</label><br>
+                <label><input type="radio" name="interactivity" value="very-non-interactive"> Very Non-Interactive</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="interactivity-suggestions" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>3. Clarity of Content Presentation:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="clarity" value="very-clear"> Very Clear</label><br>
+                <label><input type="radio" name="clarity" value="relatively-clear"> Relatively Clear</label><br>
+                <label><input type="radio" name="clarity" value="average"> Average</label><br>
+                <label><input type="radio" name="clarity" value="less-clear"> Less Clear</label><br>
+                <label><input type="radio" name="clarity" value="very-unclear"> Very Unclear</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="clarity-suggestions" rows="3"></textarea>
+        </div>
+
+        <h3>III.Exhibition Content Evaluation</h3>
+        <!-- Similar structure for information accuracy, attractiveness, depth and breadth -->
+        
+        <div class="form-group">
+            <label>1. Information Accuracy:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="accuracy" value="very-accurate"> Very Accurate</label><br>
+                <label><input type="radio" name="accuracy" value="relatively-accurate"> Relatively Accurate</label><br>
+                <label><input type="radio" name="accuracy" value="average"> Average</label><br>
+                <label><input type="radio" name="accuracy" value="less-accurate"> Less Accurate</label><br>
+                <label><input type="radio" name="accuracy" value="very-inaccurate"> Very Inaccurate</label>
+            </div>
+            <label>Error Points:</label>
+            <textarea name="error-points" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>2. Content Attractiveness:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="attractiveness" value="very-attractive"> Very Attractive</label><br>
+                <label><input type="radio" name="attractiveness" value="relatively-attractive"> Relatively Attractive</label><br>
+                <label><input type="radio" name="attractiveness" value="average"> Average</label><br>
+                <label><input type="radio" name="attractiveness" value="less-attractive"> Less Attractive</label><br>
+                <label><input type="radio" name="attractiveness" value="very-unattractive"> Very Unattractive</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="attractiveness-suggestions" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>3. Depth and Breadth of Content:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="depth-breadth" value="very-in-depth"> Very In-Depth and Extensive</label><br>
+                <label><input type="radio" name="depth-breadth" value="relatively-in-depth"> Relatively In-Depth and Extensive</label><br>
+                <label><input type="radio" name="depth-breadth" value="average"> Average</label><br>
+                <label><input type="radio" name="depth-breadth" value="insufficient"> Insufficiently In-Depth or Extensive</label><br>
+                <label><input type="radio" name="depth-breadth" value="superficial"> Very Superficial or Narrow</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="depth-suggestions" rows="3"></textarea>
+        </div>
+
+        <h3>IV.Technical and Platform Support</h3>
+        <!-- Similar structure for technical stability and UI friendliness -->
+        
+        <div class="form-group">
+            <label>1. Technical Stability:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="stability" value="very-stable"> Very Stable</label><br>
+                <label><input type="radio" name="stability" value="relatively-stable"> Relatively Stable</label><br>
+                <label><input type="radio" name="stability" value="average"> Average</label><br>
+                <label><input type="radio" name="stability" value="less-stable"> Less Stable</label><br>
+                <label><input type="radio" name="stability" value="frequent-issues"> Frequent Issues</label>
+            </div>
+            <label>Specific Problem Description:</label>
+            <textarea name="stability-issues" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>2. User Interface Friendliness:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="ui-friendliness" value="very-friendly"> Very Friendly</label><br>
+                <label><input type="radio" name="ui-friendliness" value="relatively-friendly"> Relatively Friendly</label><br>
+                <label><input type="radio" name="ui-friendliness" value="average"> Average</label><br>
+                <label><input type="radio" name="ui-friendliness" value="less-friendly"> Less Friendly</label><br>
+                <label><input type="radio" name="ui-friendliness" value="very-unfriendly"> Very Unfriendly</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="ui-suggestions" rows="3"></textarea>
+        </div>
+
+        <h3>V.Interactive and Social Features</h3>
+        <!-- Similar structure for online communication and sharing functions -->
+        
+        <div class="form-group">
+            <label>1. Online Communication Function:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="communication" value="very-satisfied"> Very Satisfied</label><br>
+                <label><input type="radio" name="communication" value="relatively-satisfied"> Relatively Satisfied</label><br>
+                <label><input type="radio" name="communication" value="average"> Average</label><br>
+                <label><input type="radio" name="communication" value="less-satisfied"> Less Satisfied</label><br>
+                <label><input type="radio" name="communication" value="very-dissatisfied"> Very Dissatisfied</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="communication-suggestions" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>2. Sharing Function:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sharing" value="very-convenient"> Very Convenient</label><br>
+                <label><input type="radio" name="sharing" value="relatively-convenient"> Relatively Convenient</label><br>
+                <label><input type="radio" name="sharing" value="average"> Average</label><br>
+                <label><input type="radio" name="sharing" value="less-convenient"> Less Convenient</label><br>
+                <label><input type="radio" name="sharing" value="very-inconvenient"> Very Inconvenient</label>
+            </div>
+            <label>Improvement Suggestions:</label>
+            <textarea name="sharing-suggestions" rows="3"></textarea>
+        </div>
+
+        <h3>VI.Other Feedback and Suggestions</h3>
+        <div class="form-group">
+            <label>1. Special Highlights: Please share the most attractive part or highlight of the exhibition.</label>
+            <textarea name="highlights" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label>2. Future Expectations: What are your expectations or suggestions for future online exhibitions?</label>
+            <textarea name="future-expectations" rows="4"></textarea>
+        </div>
+
+        <div class="note">
+            <h4>Notes:</h4>
+            <ul>
+                <li>This form is anonymous. Your personal information will only be used for follow-up communication (if an email address is provided).</li>
+                <li>Every piece of your feedback is an important reference for our improvement. Please fill in as detailed as possible.</li>
+                <li>If you have any other questions or suggestions, please feel free to contact us in the "Other Feedback and Suggestions" section or via email.</li>
+            </ul>
+        </div>
+
+        <div class="form-group">
+            <p>Please submit the completed form via email or other designated methods. The exhibition team will carefully review each feedback and continuously optimize the exhibition content and user experience.</p>
+        </div>
+        
+    </form>
+    <div class="form-group">
+            <a type="submit" class="back-btn">Submit Feedback</a>
+        </div>    
+    <a href="index.html" class="back-btn">Return to Home Page</a>
+    </div>
+</body>
+</html>
