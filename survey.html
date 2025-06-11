@@ -85,6 +85,8 @@
             background: #555;
         }
     </style>
+    <audio autoplay loop volume="0.5" src="声音/背景音乐.mp3"></audio>
+
 </head>
 <body>
     <div class="container">
@@ -103,7 +105,7 @@
     <h1>Visitor Suggestions and Comments</h1>
     <h2>Online Exhibition Visitor Feedback Collection Form</h2>
 
-    <form>
+    <form id="survey-form" onsubmit="submitForm(event)">
         <h3>I.Basic Information</h3>
         <div class="form-group">
             <label>1. Visitor Name (Optional):</label>
@@ -279,11 +281,17 @@
             <p>Please submit the completed form via email or other designated methods. The exhibition team will carefully review each feedback and continuously optimize the exhibition content and user experience.</p>
         </div>
         
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </div>
+        <a href="index.html" class="back-btn">Return to Home Page</a>
     </form>
-    <div class="form-group">
-            <a type="submit" class="back-btn">Submit Feedback</a>
-        </div>    
-    <a href="index.html" class="back-btn">Return to Home Page</a>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            window.location.href = "success.html";
+        }
+    </script>
     </div>
 </body>
 </html>
